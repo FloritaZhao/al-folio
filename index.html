@@ -108,6 +108,10 @@
       </div>
     </progress>
   </header>
+
+
+
+  
   <!-- Main content container -->
   <div class="container mt-5">
     <!-- Profile section -->
@@ -119,25 +123,28 @@
         </h1>
         <p class="desc">Innovation District Strategist | Sustainability | ESG Investing </p>
       </header>
+      
       <article>
         <div class="profile float-right">
-          <!-- Profile image -->
+ <!-- Profile image -->
           <figure>
             <picture>
               <!-- Responsive image sources -->
               <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/avatar-480.webp">
               <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/avatar-800.webp">
               <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/avatar-1400.webp">
-              <img src="assets/img/Screenshot 2023-07-23 at 3.58.32 PM.png" class="img-fluid z-depth-1 rounded-circle" width="auto" height="auto" alt="avatar.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-            </picture>
+          <img src="/assets/img/avatar.png" class="img-fluid z-depth-1 rounded-circle" width="auto" height="auto" alt="avatar.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">            </picture>
+           </picture>
           </figure>
         </div>
+        
         <div class="clearfix">
           <!-- Profile introduction -->
-           From the bustling streets of Shanghai to the innovative hubs of Los Angeles, and now Seattle, my journey has been nothing short of transformative. <br>
-          My foundation in Social Entrepreneurship at USC instilled in me a deep-seated belief: businesses can, and should, be a force for good.<br>
-          Join me as I continue to blend technology, sustainability, and business. With a heart full of passion and a mindset geared towards constant growth, I'm excited to shape a more inclusive and sustainable future.<br>
- This site is under **construction!**
+          <p>From the bustling streets of Shanghai to the innovative hubs of Los Angeles, and now Seattle, my journey has been nothing short of transformative. <br></p>
+          <p>My foundation in Social Entrepreneurship at USC instilled in me a deep-seated belief: businesses can, and should, be a force for good.<br></p>
+          <p>Join me as I continue to blend technology, sustainability, and business. With a heart full of passion and a mindset geared towards constant growth, I'm excited to shape a more inclusive and sustainable future.<br></p>
+<p> This site is under **construction!**</p>
+          
         </div>
         <!-- News section -->
         <h2><a href="/news/" style="color: inherit;">What's Up!</a></h2>
@@ -145,15 +152,17 @@
           <div class="table-responsive" style="max-height: 60vw">
             <!-- News table -->
             <table class="table table-sm table-borderless">
-              <!-- News entries -->
-              <tbody><tr>
+ <!-- News entries -->
+              <tbody>
+                <tr>
                 <th scope="row"><a style="color: inherit;">Sep 4, 2023</a></th>
                 <td>
                   <p><a style="color: inherit;">I just launched this personal website!</a></p>
                 </td>
               </tr>
-              <!-- ... More news entries ... -->
-            </tbody></table>
+<!-- ... More news entries ... -->
+            </tbody>
+            </table>
           </div>
         </div>
 
@@ -184,7 +193,63 @@
   </div>
 </footer>
 <!-- JavaScript dependencies -->
-<!-- ... JavaScript imports ... -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+<script defer src="/assets/js/zoom.js"></script>
+<script defer src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+<script src="/assets/js/no_defer.js"></script>
+<script defer src="/assets/js/common.js"></script>
+<script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+<script type="text/javascript">window.MathJax={tex:{tags:"ams"}};</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERXV632H8W"></script>
+<script>
+  function gtag(){window.dataLayer.push(arguments)}
+  window.dataLayer=window.dataLayer||[];
+  gtag("js",new Date);
+  gtag("config","G-ERXV632H8W");
+</script>
+<script type="text/javascript">
+  function progressBarSetup(){
+    "max" in document.createElement("progress") ? (
+      initializeProgressElement(),
+      $(document).on("scroll",function(){progressBar.attr({value:getCurrentScrollPosition()})}),
+      $(window).on("resize",initializeProgressElement)
+    ) : (
+      resizeProgressBar(),
+      $(document).on("scroll",resizeProgressBar),
+      $(window).on("resize",resizeProgressBar)
+    )
+  }
+  
+  function getCurrentScrollPosition(){return $(window).scrollTop()}
+  
+  function initializeProgressElement(){
+    let e=$("#navbar").outerHeight(!0);
+    $("body").css({"padding-top":e});
+    $("progress-container").css({"padding-top":e});
+    progressBar.css({top:e});
+    progressBar.attr({max:getDistanceToScroll(),value:getCurrentScrollPosition()})
+  }
+  
+  function getDistanceToScroll(){return $(document).height()-$(window).height()}
+  
+  function resizeProgressBar(){progressBar.css({width:getWidthPercentage()+"%"})}
+  
+  function getWidthPercentage(){return getCurrentScrollPosition()/getDistanceToScroll()*100}
+  
+  const progressBar=$("#progress");
+  
+  window.onload=function(){setTimeout(progressBarSetup,50)};
+</script>
+</body>
+</html>
 
 
-<div class="mpa-sc mpa-plugin-article-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-article-gatherer"></div><div class="mpa-sc mpa-plugin-image-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-image-gatherer"></div><div class="mpa-sc mpa-plugin-page-clipper mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-page-clipper"></div><div class="mpa-sc mpa-plugin-text-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-text-gatherer"></div><div class="mpa-sc mpa-plugin-video-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-video-gatherer"></div><div class="mpa-sc mpa-plugin-side-function-panel mpa-new mpa-rootsc" data-z="110" style="display: block;" id="mpa-rootsc-side-function-panel"></div><div class="mpa-sc mpa-plugin-notifier mpa-new mpa-rootsc" data-z="120" style="display: block;" id="mpa-rootsc-notifier"></div><div class="mpa-sc mpa-plugin-notification-manager mpa-new mpa-rootsc" data-z="130" style="display: block;" id="mpa-rootsc-notification-manager"></div></body></html>
